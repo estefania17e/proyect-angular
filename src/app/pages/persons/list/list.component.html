@@ -1,0 +1,27 @@
+<p>My List!</p>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Favorite ANimal</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info" *ngFor="let item of [1,2,3,4]">
+            <th scope="row">1</th>
+            <td>nombresito</td>
+            <td>54</td>
+            <td>ejemplo</td>
+            <td><button class="btn btn-warning" (click)="onGoToEdit(item)">  Edit  </button></td>
+            <td><button class="btn btn-danger" (click)="onGoToEdit(item)"> Delete </button></td>
+            
+          </tr>
+        </tbody>
+      </table>
+</div>
